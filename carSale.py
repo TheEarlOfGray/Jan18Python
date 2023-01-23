@@ -60,3 +60,34 @@ for item in dict1.keys():
 result3 = result3 / len(dict1.keys())
 print(result3)
 
+janApr = []
+
+for item in dict1.keys():
+    janApr.append(sum(dict1[item][:4]))
+
+dict2 = {}
+control = 0
+
+for key in dict1:
+    dict2[key] = janApr[control]
+    control += 1
+
+
+print(dict2)
+
+
+
+
+totals = []
+
+for month in range(len(months)):
+    temp = 0
+    for item in dict1.keys():
+        temp += dict1[item][month]
+    totals.append(temp)
+    
+
+control = totals.index(max(totals))
+result4 = months[control]
+
+print(result4)
