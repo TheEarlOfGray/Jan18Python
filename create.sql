@@ -1,9 +1,8 @@
 CREATE TABLE person (
-id INT UNIQUE,
+id INT PRIMARY KEY,
 first_name VARCHAR(40),
 surname VARCHAR(40),
-age INT,
-PRIMARY KEY id
+age INT
 );
 
 INSERT INTO person 

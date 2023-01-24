@@ -22,29 +22,29 @@ cursor = conn.cursor()
 # for item in retrieved:
 #     print(item)
 
-# cursor.executescript("DROP TABLE example;")
+# cursor.executescript("DROP TABLE person;")
 
-# with open("create.sql", "r") as file1:
-#     createString = file1.read()
-
-# cursor.executescript(createString)
-
-with open("SQLQuery1.sql", "r") as file1:
+with open("create.sql", "r") as file1:
     createString = file1.read()
 
-list1 = cursor.execute(createString).fetchall()
+cursor.executescript(createString)
 
-list2 = []
+# with open("SQLQuery1.sql", "r") as file1:
+#     createString = file1.read()
 
-for item in list1:
-    execStr = f"{item[0]} = Person(f\"{item[0] + ' ' + item[1]}\", item[2])"
-    exec(execStr)
-    list2.append(f"{item[0]}")
+# list1 = cursor.execute(createString).fetchall()
 
-print(Sally)
-print(Dave)
-print(Simon)
-print(Fiona)
+# list2 = []
+
+# for item in list1:
+#     execStr = f"{item[0]} = Person(f\"{item[0] + ' ' + item[1]}\", item[2])"
+#     exec(execStr)
+#     list2.append(f"{item[0]}")
+
+# print(Sally)
+# print(Dave)
+# print(Simon)
+# print(Fiona)
 
 # dict1 = {}
 # for item in list1:
