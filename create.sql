@@ -1,4 +1,4 @@
-CREATE TABLE person (
+CREATE TABLE IF NOT EXISTS person (
 id INT PRIMARY KEY,
 first_name VARCHAR(40),
 surname VARCHAR(40),
