@@ -1,6 +1,5 @@
 # Jan18Python  
 
-Hi all, I hope you're doing well today.  
-I'm just chasing up this weeks badge, I'll let you all know as soon as I have it available.
-Speak soon.
+Hi again everyone. For your upload to Bud for this week I'm told that you can mark your progress for the week on Cloud Academy as 'Complete' to receive a completion certificate.  
+If you have any trouble obtaining this you can get help from a DLC.
 Earl.
